@@ -18,6 +18,11 @@ const routes = [
     path: '*',
     name: 'Error',
     component: () => import('../views/Error.vue')
+  },
+  {
+    path: '/coin/:id',
+    name: 'coin-detail',
+    component: () => import('../views/CoinDetail.vue')
   }
 
 ]
