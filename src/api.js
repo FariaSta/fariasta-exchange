@@ -23,8 +23,22 @@ function getAssetHistory (coin){
     .then(res => res.data)
 }
 
+function getMarkets(coin){
+    return fetch (`https://api.coincap.io/v2/assets/${coin}/markets?limit=5`)
+    .then(res => res.json())
+    .then(res => res.data)
+}
+
+function getExchange(id){
+    return fetch(`https://api.coincap.io/v2/exchanges/${id}`)
+    .then(res => res.json())
+    .then(res => res.data)
+}
+
 export default {
     getAssets,
     getAsset,
+    getMarkets,
+    getExchange,
     getAssetHistory
 }
