@@ -1,10 +1,9 @@
 <template>
    <header class="shadow w-screen">
        <nav>
-           <nav class="flex items-center justify-between flex-wrap bg-green-400 p-6">
+           <nav class="flex items-center justify-between flex-wrap bg-black p-4">
                <div class="flex items-center flex-shrink-0 text-white mr-6">
-                   <px-icon class="mr-2" />
-                   <router-link to="/" class="font-semibold text-xl tracking-tight">FariaSta Exchange</router-link>
+                   <router-link to="/"><img src="../../public/logo.png" alt="FariaSta Exchange" width="170px"></router-link>
                    <div class="ml-6 text-sm lg:flex-grow">
                         <router-link v-for="l in links" :to="l.to" :key="l.title" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" >
                             {{ l.title }}
