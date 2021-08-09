@@ -1,4 +1,4 @@
-# api-notion
+# FariaSta Exchange
 
 ## Project setup
 ```
