@@ -7,7 +7,9 @@ import { dollarFilter, percentFilter } from '@/filters'
 import Chartick from 'vue-chartkick'
 import Chart from 'chart.js'
 import { VueSpinners } from '@saeris/vue-spinners'
+import VueAgile from 'vue-agile'
 
+Vue.use(VueAgile)
 Vue.use(VueSpinners)
 Vue.use(Chartick.use(Chart))
 Vue.filter('dollar', dollarFilter)
